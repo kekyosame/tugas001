@@ -50,9 +50,9 @@ public class MainActivity extends AppCompatActivity {
             if (isValid());
 
             String nama = etNama.getText().toString();
-            String kelas = etHobi.getText().toString();
-            String hasil= "  Buku yang telah dikembalikan \n";
-            String hasil1= "Tanggal Check \n";
+            String hobi = etHobi.getText().toString();
+            String hasil= " Organisasi yang diikuti\n";
+            String hasil1= "Jenis kelamin \n";
             {
                 int startlen = hasil.length();
                 if (cbMensan.isChecked()) hasil+=cbMensan.getText()+"\n";
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 if (rbPr.isChecked()) hasil1+=rbPr.getText()+"\n";
             }
 
-            tvHasil.setText(nama+" dari kelas "+kelas+" "+spJurusan.getSelectedItem().toString()+",   "+hasil+hasil1);
+            tvHasil.setText(nama+" dengan "+hobi+" dari kelas "+spJurusan.getSelectedItem().toString()+",   "+hasil+hasil1);
         }
     }
 
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         boolean valid = true;
         String nama = etNama.getText().toString();
         String kelas = etHobi.getText().toString();
-        String hasil= "Buku yang telah dikembalikan \n";
 
 
 
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (kelas.isEmpty())
         {
-            etHobi.setError("kelas belum diisi");
+            etHobi.setError("Hobi belum diisi");
         }
         else
         {
