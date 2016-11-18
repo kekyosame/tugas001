@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
             String nama = etNama.getText().toString();
             String hobi = etHobi.getText().toString();
-            String hasil= " Organisasi yang diikuti\n";
+            String hasil= " Organisasi yang diikuti :\n";
             String hasil1= "Jenis kelamin ";
             {
                 int startlen = hasil.length();
