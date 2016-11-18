@@ -80,6 +80,13 @@
             android:paddingTop="6dp"/>
 
 
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:id="@+id/radioButtonper"
+            android:checked="false" />
+
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -88,16 +95,17 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RPL"
-                android:id="@+id/radioButtonSes"
+                android:text="Laki-Laki"
+                android:id="@+id/radioButtonlk"
                 android:checked="false" />
 
-            <RadioButton
+            <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TKJ"
-                android:id="@+id/radioButtonSeb"
-                android:checked="false" />
+                android:layout_height="0dp"
+                android:text="Check"
+                android:id="@+id/buttonOK"
+                android:layout_weight="1" />
+
         </RadioGroup>
 
         <CheckBox
@@ -120,15 +128,8 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:text="Spitek"
-            android:id="@+id/checkSpitek"
+            android:id="@+id/checkBoxSpitek"
             android:checked="false"
-            android:layout_weight="1" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:text="Check"
-            android:id="@+id/buttonOK"
             android:layout_weight="1" />
 
         <TextView
